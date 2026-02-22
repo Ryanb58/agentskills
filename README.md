@@ -8,22 +8,6 @@ My collection of agent skills for AI assistants.
 npx skills add <skill-path>
 ```
 
-### Install Individual Skills
-
-```bash
-# Install a specific skill
-npx skills add ./skills/my-skill
-
-# Install from GitHub
-npx skills add https://github.com/your-org/agentskills/tree/main/skills/skill-name
-
-# List available skills without installing
-npx skills add . --list
-
-# Install all skills
-npx skills add . --all
-```
-
 ## Skill Structure
 
 ```
@@ -34,11 +18,21 @@ skills/
 │       └── api.md
 ```
 
+## Available Skills
+
+| Skill | Description | Install |
+|-------|-------------|---------|
+| [agent-browser](./skills/agent-browser) | Web research automation using agent-browser - headless browser for AI agents with compact text output | `npx skills add https://github.com/tbrazelton/agentskills/tree/main/skills/agent-browser` |
+| [aws-cost-optimizer](./skills/aws-cost-optimizer) | AWS cost optimization using CLI - identify waste, unattached resources, and savings opportunities | `npx skills add https://github.com/tbrazelton/agentskills/tree/main/skills/aws-cost-optimizer` |
+| [gh-issues-optimizer](./skills/gh-issues-optimizer) | GitHub Issues optimization using gh CLI - analyze, organize, and improve issue management | `npx skills add https://github.com/tbrazelton/agentskills/tree/main/skills/gh-issues-optimizer` |
+| [sql-optimization](./skills/sql-optimization) | Expert-level SQL query and data model optimization based on use-the-index-luke.com principles | `npx skills add https://github.com/tbrazelton/agentskills/tree/main/skills/sql-optimization` |
+
 ## Contributing
 
 1. Create a new directory under `skills/`
 2. Add a `SKILL.md` with proper frontmatter
 3. Test with `npx skills add ./skills/your-skill`
+
 
 ## Resources
 
